@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korzinka</title>
+    <link rel="icon" href="./img/logo.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="main container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <form  method="POST">
+                    <div class="wrapper d-flex align-items-center justify-content-between"><label for="search"></label>
+                        <input class="search-input border-0 rounded-3" type="text" id="search" placeholder="Nima kerak?"
+                            autocomplete="off">
+                        <button class="search-btn btn-danger">Press</button>
+                    </div>
+                </form>
+                <ol class="ready-list"></ol>
+                <button class="clear rounded-3 border-0">Clear</button>
+                <button class="check-btn clear border-0 rounded-3" id="check-btn">Check</button>
+            </div>
+
+            <div class="right-site col-6 border-3">
+                <div class="row d-flex align-items-center justify-content-sm-between">
+                    <div class="col-2">
+                        <p class="yellow fw-bold mb-0">Fruits</p>
+                        <ul class="fruits">
+                            <li class="fruits-item yellow fw-bold">banana</li>
+                            <li class="fruits-item yellow fw-bold">kiwi</li>
+                            <li class="fruits-item yellow fw-bold">lemon</li>
+                            <li class="fruits-item yellow fw-bold">peach</li>
+                            <li class="fruits-item yellow fw-bold">pineaplle</li>
+                            <li class="fruits-item yellow fw-bold">apple</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-2">
+                        <p class="white fw-bold mb-0">Vegetables</p>
+                        <ul class="vegetables">
+                            <li class="vegetable-item white fw-bold">carrot</li>
+                            <li class="vegetable-item white fw-bold">potato</li>
+                            <li class="vegetable-item white fw-bold">tomato</li>
+                            <li class="vegetable-item white fw-bold">cucumber</li>
+                            <li class="vegetable-item white fw-bold">onio</li>
+                            <li class="vegetable-item white fw-bold">raddish</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-2">
+                        <p class="red fw-bold mb-0">Meat Products</p>
+                        <ul class="meat ">
+                            <li class="meat-item red fw-bold">bull</li>
+                            <li class="meat-item red fw-bold">sheep</li>
+                            <li class="meat-item red fw-bold">rabbit</li>
+                            <li class="meat-item red fw-bold">fish</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
