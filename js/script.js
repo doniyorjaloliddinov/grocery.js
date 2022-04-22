@@ -22,12 +22,13 @@ elSearchBtn.addEventListener("click", function(evt){
     console.log(groceryLists);
 
   elSearch.style.color = "black";
-  // for (groceryList of groceryLists) {
+  for (groceryList of groceryLists) {
+    elReadyList.innerHTML = "";
     let newLi = document.createElement("li");
     newLi.textContent = groceryLists;
     elReadyList.append(newLi);
     newLi.style.color = "white";
-  // }
+  }
 })
 
 elClearBtn.addEventListener("click", function(evt) {
@@ -39,11 +40,10 @@ elClearBtn.addEventListener("click", function(evt) {
 elCheckBtn.addEventListener("click", function(evt) {
   evt.preventDefault();
 
-  if(search in marketsProducts) {
-    console.log(`${search} we have some kind products`);
-
-  }
-  else {
-    console.log("unfortunatly we don't have such kind of products");
+  for (let product of marketsProducts) {
+    if (search === product) {
+      console.log(product);
+      console.log(`${search} we have some kind products`);
+    } 
   }
 })

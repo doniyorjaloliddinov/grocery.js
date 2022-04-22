@@ -17,8 +17,8 @@
 
     
 grocery_list = []
-user_input = str("Do'kondan sizgga nimalar kerak")
-user_input += "(Davom etasizmi ?(ha/yoq)): "
+user_question = str("Do'kondan sizgga nimalar kerak?")
+user_input = str("Davom etasizmi ?(ha/yoq)")
 shart = ''
 
 while shart != "yoq":
@@ -30,3 +30,4 @@ while shart != "yoq":
 print(f"Sizning olgan mahsulotlaringiz: {grocery_list}")
         
 
+   
