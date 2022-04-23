@@ -3,6 +3,7 @@ let elSearchBtn = document.querySelector(".search-btn");
 let elReadyList = document.querySelector(".ready-list");
 let elClearBtn = document.querySelector(".clear");
 let elCheckBtn = document.querySelector("#check-btn");
+let elCheckedBtn = document.querySelector(".checked")
 let message = "Iltimos son kiritmang";
 
 let groceryLists = [];
@@ -18,9 +19,14 @@ elSearchBtn.addEventListener("click", function(evt){
     elSearch.style.color = "red";
     return
   }
-    groceryLists.push(search);
+  if (elCheckedBtn.checked) {
+    groceryLists.unshift(search);
     console.log(groceryLists);
 
+  }
+  else {
+    groceryLists.push(search);
+  }
   elSearch.style.color = "black";
   for (groceryList of groceryLists) {
     elReadyList.innerHTML = "";

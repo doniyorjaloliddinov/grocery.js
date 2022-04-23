@@ -43,3 +43,9 @@ body {
 .check-btn {
     background-color: rgb(0, 247, 16);
 }
+
+.checked {
+    width: 35px;
+    height: 25px;
+    
+}
